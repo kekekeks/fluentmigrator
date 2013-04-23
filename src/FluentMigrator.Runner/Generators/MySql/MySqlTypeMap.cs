@@ -37,6 +37,9 @@ namespace FluentMigrator.Runner.Generators.MySql
             SetTypeMap(DbType.Int16, "SMALLINT");
             SetTypeMap(DbType.Int32, "INTEGER");
             SetTypeMap(DbType.Int64, "BIGINT");
+			SetTypeMap (DbType.UInt16, "SMALLINT UNSIGNED");
+			SetTypeMap (DbType.UInt32, "INTEGER UNSIGNED");
+			SetTypeMap (DbType.UInt64, "BIGINT UNSIGNED");
             SetTypeMap(DbType.Single, "FLOAT");
             SetTypeMap(DbType.StringFixedLength, "CHAR(255)");
             SetTypeMap(DbType.StringFixedLength, "CHAR($size)", StringCapacity);
